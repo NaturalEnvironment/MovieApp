@@ -1,0 +1,18 @@
+server:
+  port: 8888
+  
+spring:
+  datasource:
+    username: hibernate_role
+    password: password
+    url: jdbc:postgresql://classdemodb.c8l81grackal.us-east-2.rds.amazonaws.com:5432/hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: false
+        temp:
+          use_jdbc_metadata_default: false
